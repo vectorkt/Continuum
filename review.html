@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- If IE use the latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the page to the width of the device and set the zoon level -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+
+    <script src="js/namesets.js"></script>
+    <script src="js/namesetsmethods.js"></script>
+    <script src="js/arrays.js"></script>
+    <script src="js/gmtool.js"></script>
+
+
+
+    <script src="js/lightswitch.js"></script>
+    <link id="generalcss" href="css/light.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body onload="pagerunning()">
+
+
+    <nav id="mynavbar" class="navbar navbar-inverse navbar-static-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <a class="navbar-brand" href="#">Seedless Bloom</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="maxims.html">Maxims</a></li>
+                    <li><a href="spanone.html">Span One</a></li>
+                    <li><a href="helpertools.html">Helper Tools</a></li>
+					<li><a href="gmtool.html">GM Tools</a></li>
+                    <li class="active"><a href="#">Review</a></li>
+                    <li><a href="#" onclick="lightswitch()">Invert Colors</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="row">
+        <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10">
+
+		
+		   
+		   
+		   
+		   <form name="processing" action='php/processing.php' method='POST'>
+
+     <label>Name <input type="text" name="name" pattern="[a-zA-Z0-9._%+- ]+" required></label>
+
+     <label>Email <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required></label>
+	<br>
+    
+	<textarea name="feedback" pattern="[a-zA-Z0-9._%+- ]+" rows="4" cols="50" name="feedback" placeholder="Your feedback here..." required></textarea>
+      <br>
+
+      <input class="myCustomButton" type="submit" name="thumbs_up" value="Thumbs up">
+	  <input class="myCustomButton" type="submit" name="thumbs_down" value="Thumbs down">
+
+   </form>
+
+
+   <br>
+
+   <form name="showlist" action='php/processing.php' method='POST'>
+
+      <input class="myCustomButton" type="submit" name="recover_feedback_list" value="See feedbacks">
+
+
+   </form>
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+ 
+
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+body{ 
+background-color:white; 
+font-family: 'Times New Roman', Times, serif;
+font-size: large;
+}
+
+
+a{color:darkorange!important; font-weight: bolder!important; font-style: italic!important;}
+
+h1,h2,h3,h4,h5,h6{color:darkorange;
+ font-weight: bolder;
+  font-style: italic;
+  }
+
+/* */
+/*
+this works
+
+ .navbar .navbar-toggler .icon-bar {
+  background: darkorange !important;
+} */
+
+
+.navbar .navbar-toggler .icon-bar {
+  background: darkorange !important;
+}
+
+c{
+  color:darkorange;
+  font-weight: bolder;
+  font-style: italic;
+
+}
+
+
+
+#age,#asnot,#corner,#continuum,#down,#elder,#frag,#frune,#finnah,#futury,#gemeni,#junior,#level,#leveller,#levelry,#locality,#maxims,#narcissist,#paradox,#sentientforce,#span,#spanner,#up,#whattime,#yet,#misc{ 
+  color:darkorange;
+  font-weight:bold;
+  font-style:italic;
+  }
+
+.ui-tooltip {
+  color:black;
+  background-color:white; 
+  max-width: 80%;
+}
+
+
+.myCustomButton {
+    background-color: darkorange;
+    border: none;
+    color: white;
+    padding: 0.9375em 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.25em 0.125em;
+    cursor: pointer;
+    font-size: 0.75em;
+}
+
+

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- If IE use the latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the page to the width of the device and set the zoon level -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+    <script src="js/lightswitch.js"></script>
+    <link id="generalcss" href="css/light.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/helpertools.css" rel="stylesheet" type="text/css" />
+    <script src="js/helpertools.js"></script>
+</head>
+
+<body onload="pagerunning()">
+    <nav id="mynavbar" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <a class="navbar-brand" href="#">Seedless Bloom</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="maxims.html">Maxims</a></li>
+                    <li><a href="spanone.html">Span One</a></li>
+                    <li class="active"><a href="#">Helper Tools</a></li>
+                    <li><a href="gmtool.html">GM Tools</a></li>
+					<li><a href="review.html">Review</a></li>
+                    <li><a href="#" onclick="lightswitch()">Invert Colors</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="row">
+        <div class="col-lg-offset-3 col-lg-6 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10">
+
+            <br><br>
+            <h3>Spanning</h3>
+            <div class="inlinedesc">
+
+                <div>
+                    <em><p>Current Span</p></em>
+                    <div class="inline">
+                        <p>Years</p>
+                        <input type="text" id="current_span_years" size=3 value=1>
+                        <p>Days</p>
+                        <input type="text" id="current_span_days" size=3 value=0>
+                    </div>
+                    <br>
+                </div>
+
+                <div style="border-left:1px hidden #000; width:2em;height:5em"></div>
+
+                <div>
+                    <em><p>Level Span</p></em>
+                    <div class="inline">
+                        <input type="text" id="meters_spanned" placeholder="meters" size=4>
+                        <input type="text" id="km_spanned" placeholder="kilometers" size=4>
+                    </div>
+                    <br>
+                    <button class="myCustomButton" onclick="getspanpointspace()">Level Span</button>
+                </div>
+
+                <div style="border-left:1px hidden #000; width:2em;height:10em"></div>
+
+                <div>
+                    <em><p>Time Span</p></em>
+                    <p>Departure</p>
+                    <input type="text" id="departure_date" placeholder="dd/mm/yyyy" size=10>
+                    <br>
+                    <p>Arriving</p>
+                    <input type="text" id="arrival_date" placeholder="dd/mm/yyyy" size=10>
+
+                    <br>
+                    <br>
+                    <button class="myCustomButton" onclick="getspanpointstime()">Time Span</button>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+
+
+            <h3>Generate Skill Macro</h3>
+            <p>Skill Name</p>
+            <input type="text" id="skill_name" placeholder="i.e. Navigator, Researcher">
+            <br>
+            <p>Skill Bonus</p>
+            <input type="text" id="skill_bonus" value=0 size="1">
+            <br>
+            <br>
+            <button class="myCustomButton" onclick="generateskill()">Get Skill Macro</button>
+            <br>
+            <br>
+
+
+
+            <h3>"Instant" Skill</h3>
+            <p>Skill Name</p>
+            <input type="text" id="skill_name_advancement" placeholder="i.e. Navigator, Researcher">
+            <br>
+            <br>
+            <div class="inline">
+                <p>Previous Age(Years)</p>
+                <input type="text" id="Age" value=0 size="1">
+                <p>From</p>
+                <input type="text" id="skill_start" value=+0 size="1">
+                <p>to</p>
+                <input type="text" id="skill_end" value=+0 size="1">
+
+            </div>
+
+            <br>
+            <br>
+            <button class="myCustomButton" onclick="advancement()">Get Age and Skill Macro</button>
+            <!---->
+
+        </div>
+    </div>
+
+
+</body>

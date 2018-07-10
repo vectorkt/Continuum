@@ -1,0 +1,22 @@
+
+.inline * {display:inline;
+
+}
+
+.inlinedesc>div{
+  /*
+  border-style:solid;
+  border-color:red;
+  */
+  display:inline-block;
+  vertical-align:top;}
+
+.tables {
+  display: inline-block;
+  margin: 10px;
+}
+
+/* #shitoption {
+  display: normal;
+} */
+/**/

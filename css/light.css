@@ -1,0 +1,75 @@
+body{ 
+background-color:black;
+color:white;
+font-family: 'Times New Roman', Times, serif;
+font-size: large;
+}
+
+
+a{color:#0066cc!important; font-weight: bolder!important; font-style: italic!important;}
+
+h1,h2,h3,h4,h5,h6{color:#0066cc;
+ font-weight: bolder;
+  font-style: italic;
+  }
+
+/* */
+/*
+this works
+
+ .navbar .navbar-toggler .icon-bar {
+  background: #0066cc !important;
+} */
+
+
+.navbar .navbar-toggler .icon-bar {
+  background: #0066cc !important;
+}
+
+c{
+  color:#0066cc;
+  font-weight: bolder;
+  font-style: italic;
+
+}
+
+
+
+#age,#asnot,#corner,#continuum,#down,#elder,#frag,#frune,#finnah,#futury,#gemeni,#junior,#level,#leveller,#levelry,#locality,#maxims,#narcissist,#paradox,#sentientforce,#span,#spanner,#up,#whattime,#yet,#misc{ 
+  color:#0066cc;
+  font-weight:bold;
+  font-style:italic;
+  }
+
+
+.ui-tooltip {
+  color:white;
+  background-color:black; 
+  max-width: 80%;
+  box-shadow:white;
+}
+
+input[type="text"], textarea {
+
+  background-color : black; 
+
+}
+
+
+select{
+
+  background-color: black;
+}
+
+.myCustomButton {
+    background-color: #0066cc;
+    border: none;
+    color: black;
+    padding: 0.9375em 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.25em 0.125em;
+    cursor: pointer;
+    font-size: 0.75em;
+}
